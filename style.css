@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  display: flex;
+  justify-content: center;
+}
+
+.first {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);
+  display: flex;
+  justify-content: center;
+}
+
+
+ul.menu {
+  position: relative;
+  width: 1000px;
+  height: 86px;
+  margin: 30px 0 0 0;
+  border-radius: 50px;
+  background: #000;
+  list-style-type: none;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul.menu .menu-item {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: #f9ffaa;
+  text-decoration: none;
+  font-size: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.hover-underline-animation:hover {
+  color: rgb(255, 191, 0);
+  transition: transform 0.4s ease-out;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle, rgba(255, 123, 234, 1) 22%, rgba(121, 199, 255, 1) 89%);
+  transform-origin: bottom;
+  transition: transform 0.17s ease;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom;
+}
+
+.second {
+  width: 100%;
+  height: 100vh;
+  background: rgb(27, 27, 27);
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  background-image: url(https://lirp.cdn-website.com/feae2d34/dms3rep/multi/opt/faketurf_soccer-640w.jpg);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 200px;
+  font-size: 120px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#myVideo {
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.third {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
